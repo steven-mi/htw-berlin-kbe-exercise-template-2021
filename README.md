@@ -3,8 +3,8 @@
 ## TODO
 1. Ersetzen Sie die Überschrift durch `TEAMNAME`-KBE
 2. Geben Sie Ihre Teammitglieder in die Tabelle ein
-3. Folge *KBE Repository einrichten*
-4. Push den aktuellen Stand in den Master Branch 
+3. Folge den Anweisungen in der pom.xml
+4. Folge **KBE Repository einrichten**
 5. Erstelle die Branches (Groß- und Kleinschreibung beachten):
    - `runmerunner`
    - `songsservlet`
@@ -27,7 +27,7 @@ git clone https://github.com/htwb-kbe/htwb-kbe-repo-template.git
 cd htwb-kbe-repo-template
 ```
 
-Erstellen Sie ein leeres GitHub-Repository (kein `gitignore`, `README.md` und `LICSENSE`) mit `TEAMNAME` als Repository-Name. Übertragen Sie dann den Inhalt des Template-Repository in Ihr erstelltes Repository.
+Erstellen Sie ein leeres GitHub-Repository (kein `.gitignore`, `README.md` und `LICSENSE`) mit `TEAMNAME` als Repository-Name. Übertragen Sie dann den Inhalt des Template-Repository in Ihr erstelltes Repository.
 
 ```bash
 git remote remove origin
@@ -35,11 +35,11 @@ git remote add origin <YOUR GIT CLONE LINK>
 git push -u origin master
 ```
 
-
-
 ## runmerunner clean, bauen, testen & verpacken
+```
+mvn -pl runmerunner clean package 
+```
 
-	mvn -pl runmerunner clean package 
 ODER
 
 ```
@@ -51,7 +51,10 @@ mvn clean package
 
 ## songsservlet clean, bauen, testen & verpacken
 
-	mvn -pl songsservlet clean package 
+```
+mvn -pl songsservlet clean package 
+```
+
 ODER
 
 ```
@@ -61,14 +64,16 @@ mvn clean package
 
 
 
-##songsWS clean, bauen, testen & verpacken
+## songsWS clean, bauen, testen & verpacken
+```
+mvn -pl songsWS clean package 
+```
 
-	mvn -pl songsWS clean package 
 ODER
 
 ```
 cd songsWS 
-songsWS/> mvn clean package
+mvn clean package
 ```
 
 
