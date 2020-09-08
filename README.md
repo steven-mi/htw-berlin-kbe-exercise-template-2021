@@ -1,74 +1,87 @@
-KBE SoSe2020
+# KBE Projekt Template
 
-Teamname: TEAMNAME
+## TODO
 
-Mitglied:
-Matrikelnummer:
+1. Ersetzen Sie die Überschrift durch `Teamname`-KBE
+2. Geben Sie Ihre Teammitglieder in die Tabelle ein
+3. Folge *KBE Repository einrichten*
+4. Erstelle die Branches (Groß- und Kleinschreibung beachten):
+   - `runmerunnr`
+   - `songsservlet`
+   - `songsWSa`
+   - `songsWSb`
+5. TODO und die Stichpunkte entfernen
 
-Mitglied:
-Matrikelnummer:
-
-
-Instructions to commit&push this project structure into gitHub:
-
-1) git clone/checkout your 'TEAMNAME'-KBE repository
-2) cd 'TEAMNAME'-KBE
-3) Before putting the new project structure into git, clean up old files and dirs: 
-   'TEAMNAME'-KBE/> rm -rf *
-   'TEAMNAME'-KBE/> git commit -m "clean up and prep" FILES_AND_DIRS_YOU_DELETED
-   'TEAMNAME'-KBE/> git push
-   'TEAMNAME'-KBE/> cd ..
-
-4) Now copy the new project structure into your 'TEAMNAME'-KBE-repo:
-   cp KBE-REPO-STRUCT/README.md 'TEAMNAME'-KBE/
-   cp KBE-REPO-STRUCT/pom.xml 'TEAMNAME'-KBE/
-   cp -r KBE-REPO-STRUCT/runmerunner 'TEAMNAME'-KBE/
-   cp -r KBE-REPO-STRUCT/songsservlet 'TEAMNAME'-KBE/
-   cp -r KBE-REPO-STRUCT/songsWS 'TEAMNAME'-KBE/
-
-5) !IMPORTANT!  Before you continue, change all references 
-   of 'TEAMNAME' to your actual teamname. You can do this 
-   in your IDE (a project-global replace/refactor) or by hand: 
-   
-   Edit all pom.xml's, directories and .java-files
-
-6) Now commit & push the new project structure into git:
-	> cd 'TEAMNAME'-KBE/
-   'TEAMNAME'-KBE> git status (should list all of the above)
-   'TEAMNAME'-KBE> git add README.md pom.xml runmerunner/ songsservlet/ songsWS/
-   'TEAMNAME'-KBE> git commit -m "KBE projects" README.md pom.xml runmerunner/ songsservlet/ songsWS/
-   'TEAMNAME'-KBE> git push
-
-7) Test that everything ended up in git:
-   The other team member clones or checks out your git-repo 
+| Name          | Matrikelnummer  |
+| :------------ | --------------- |
+| TEAMMITGLIED1 | MATRIKELNUMMER1 |
+| TEAMMITGLIED2 | MATRIKELNUMMER2 |
 
 
-runmerunner clean, bauen, testen & verpacken:
 
-	> mvn -pl runmerunner clean package 
+## KBE Repository einrichten
+
+Template von GitHub klonen:
+
+```bash
+git clone https://github.com/htwb-kbe/htwb-kbe-repo-template.git
+cd htwb-kbe-repo-template
+```
+
+Erstellen Sie ein leeres GitHub-Repository (kein `gitignore`, `README.md` und `LICSENSE`) mit 'Teamname' KBE als Repository-Name. Übertragen Sie dann den Inhalt des Template-Repository in Ihr erstelltes Repository.
+
+```bash
+git remote remove origin
+git remote add origin <YOUR GIT CLONE LINK>
+git push -u origin master
+```
+
+
+
+## runmerunner clean, bauen, testen & verpacken
+
+	mvn -pl runmerunner clean package 
 ODER
-	> cd runmerunner 
-	runmerunner/> mvn clean package 
+
+```
+cd runmerunner
+mvn clean package 
+```
 
 
-songsservlet clean, bauen, testen & verpacken:
 
-	> mvn -pl songsservlet clean package 
+## songsservlet clean, bauen, testen & verpacken
+
+	mvn -pl songsservlet clean package 
 ODER
-	> cd songsservlet 
-	songsservlet/> mvn clean package 
+
+```
+cd songsservlet
+mvn clean package 
+```
 
 
-songsWS clean, bauen, testen & verpacken:
 
-	> mvn -pl songsWS clean package 
+##songsWS clean, bauen, testen & verpacken
+
+	mvn -pl songsWS clean package 
 ODER
-	> cd songsWS 
-	songsWS/> mvn clean package
+
+```
+cd songsWS 
+songsWS/> mvn clean package
+```
 
 
-Alle Projekte cleanen, bauen, testen & verpacken:
-	> mvn clean package
+
+## Alle Projekte clean, bauen, testen & verpacken: > mvn clean package
+
+```
+mvn clean package
+```
+
+
+
 
 
 
