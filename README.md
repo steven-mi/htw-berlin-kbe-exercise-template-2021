@@ -6,7 +6,7 @@
 3. Folge *KBE Repository einrichten*
 4. Push den aktuellen Stand in den Master Branch 
 5. Erstelle die Branches (Groß- und Kleinschreibung beachten):
-   - `runmerunnr`
+   - `runmerunner`
    - `songsservlet`
    - `songsWSa`
    - `songsWSb`
