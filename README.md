@@ -1,7 +1,7 @@
 # KBE Projekt Template
 
 ## TODO
-1. Ersetzen Sie die Überschrift durch `Teamname`-KBE
+1. Ersetzen Sie die Überschrift durch `TEAMNAME`-KBE
 2. Geben Sie Ihre Teammitglieder in die Tabelle ein
 3. Folge *KBE Repository einrichten*
 4. Push den aktuellen Stand in den Master Branch 
@@ -27,7 +27,7 @@ git clone https://github.com/htwb-kbe/htwb-kbe-repo-template.git
 cd htwb-kbe-repo-template
 ```
 
-Erstellen Sie ein leeres GitHub-Repository (kein `gitignore`, `README.md` und `LICSENSE`) mit 'Teamname' KBE als Repository-Name. Übertragen Sie dann den Inhalt des Template-Repository in Ihr erstelltes Repository.
+Erstellen Sie ein leeres GitHub-Repository (kein `gitignore`, `README.md` und `LICSENSE`) mit `TEAMNAME` als Repository-Name. Übertragen Sie dann den Inhalt des Template-Repository in Ihr erstelltes Repository.
 
 ```bash
 git remote remove origin
