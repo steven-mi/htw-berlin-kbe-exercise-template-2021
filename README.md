@@ -1,16 +1,15 @@
 # KBE Projekt Template
 
 ## TODO
-
 1. Ersetzen Sie die Überschrift durch `Teamname`-KBE
 2. Geben Sie Ihre Teammitglieder in die Tabelle ein
 3. Folge *KBE Repository einrichten*
-4. Erstelle die Branches (Groß- und Kleinschreibung beachten):
+4. Push den aktuellen Stand in den Master Branch 
+5. Erstelle die Branches (Groß- und Kleinschreibung beachten):
    - `runmerunnr`
    - `songsservlet`
    - `songsWSa`
    - `songsWSb`
-5. TODO und die Stichpunkte entfernen
 
 | Name          | Matrikelnummer  |
 | :------------ | --------------- |
