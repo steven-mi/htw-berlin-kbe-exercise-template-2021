@@ -1,7 +1,7 @@
 # KBE Projekt Template
 
 ## TODO
-1. Ersetzen Sie die Überschrift durch `TEAMNAME`-KBE
+1. Ersetzen Sie die Überschrift mit `TEAMNAME`
 2. Geben Sie Ihre Teammitglieder in die Tabelle ein
 3. Folge den Anweisungen in der pom.xml
 4. Folge **KBE Repository einrichten**
