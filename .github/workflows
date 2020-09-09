@@ -1,0 +1,28 @@
+name: Runmerunner
+
+# Action will run on each push and after a pull request
+on:
+  push:
+    branches:
+      - runmerunner
+
+jobs:
+  build:
+    # define os, versions, ...
+    strategy:
+      matrix:
+        os: [ubuntu-18.04]
+        java: [11]
+    # run on os ...
+    runs-on: ${{ matrix.os }}
+    # all build steps
+    steps:
+    - uses: actions/checkout@v2
+    - name: Set up Java 11
+      uses: actions/setup-java@v1
+      with:
+        java-version: ${{ matrix.java }}
+        java-package: jdk 
+        architecture: x64 
+    - name: runmerunner clean, build, test & package
+      run: mvn -pl runmerunner clean package 
