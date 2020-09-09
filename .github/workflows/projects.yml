@@ -3,8 +3,8 @@ name: clean, build, test & package all projects
 # Action will run on each push
 on:
   push:
-    branches:
-      - '!master'   # excludes master
+    branches-ignore:
+      - master
 
 jobs:
   build:
