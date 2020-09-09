@@ -1,10 +1,10 @@
-name: clean, build, test & package all projects
+name: runmerunner clean, build, test & package
 
 # Action will run on each push
 on:
   push:
-    branches-ignore:
-      - master
+    branches: 
+      - runmerunner
 
 jobs:
   build:
@@ -26,7 +26,3 @@ jobs:
         architecture: x64 
     - name: runmerunner clean, build, test & package
       run: mvn -pl runmerunner clean package 
-    - name: songsservlet clean, build, test & package
-      run: mvn -pl songsservlet clean package 
-    - name: songsWS clean, build, test & package
-      run: mvn -pl songsWS clean package 
