@@ -2,7 +2,7 @@ name: songsservlet clean, build, test, package & run scripts
 
 # Action will run on each push
 on:
-  push:
+  pull_request:
     branches:
       - songsservlet
 
