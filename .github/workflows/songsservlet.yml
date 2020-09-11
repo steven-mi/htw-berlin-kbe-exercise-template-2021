@@ -1,0 +1,49 @@
+name: songsservlet clean, build, test, package & run scripts
+
+# Action will run on each push
+on:
+  push:
+    branches:
+      - songsservlet
+
+jobs:
+  build:
+    # define os, versions, ...
+    strategy:
+      matrix:
+        os: [ubuntu-18.04]
+        java: [11]
+    # run on os ...
+    runs-on: ${{ matrix.os }}
+    # tomcat service
+    services:
+      container:
+        image: tomcat:9.0.37-jdk11
+        ports:
+          - 8080:8080
+        options:
+          --name tomcat
+    # all build steps
+    steps:
+      - uses: actions/checkout@v2
+      - name: Set up Java 11
+        uses: actions/setup-java@v1
+        with:
+          java-version: ${{ matrix.java }}
+          java-package: jdk
+          architecture: x64
+      - name: songsservlet clean, build, test & package
+        run: mvn -pl songsservlet clean package
+      - name: move .war to Tomcat container
+        run: |
+          docker cp ./songsservlet/target/songsservlet-*.war tomcat:/usr/local/tomcat/webapps
+          docker exec tomcat ls /usr/local/tomcat/webapps
+          sleep 120
+      - name: run TestScripts
+        run: |
+          servletfile=$(ls ./songsservlet/target/songsservlet-*.war)
+          servletname=$(basename $servletfile .war)
+          echo $servletname
+          sh ./songsservlet/scripts/getTester.sh $servletname
+          sh ./songsservlet/scripts/postTester.sh $servletname
+          sh ./songsservlet/scripts/putAndDeleteTester.sh $servletname
