@@ -20,17 +20,12 @@
 
 ## KBE Repository einrichten
 
-Template von GitHub klonen:
-
-```bash
-git clone https://github.com/htwb-kbe/htwb-kbe-repo-template.git
-cd htwb-kbe-repo-template
-```
-
 Erstellen Sie ein leeres GitHub-Repository (kein `.gitignore`, `README.md` und `LICSENSE`) mit `TEAMNAME` als Repository-Name. Übertragen Sie dann den Inhalt des Template-Repository in Ihr erstelltes Repository.
 
 ```bash
-git remote remove origin
+git init
+git add -A
+git commit -m "init"
 git remote add origin <YOUR GIT CLONE LINK>
 git push -u origin master
 ```
