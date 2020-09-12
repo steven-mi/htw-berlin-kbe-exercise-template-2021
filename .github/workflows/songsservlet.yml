@@ -4,7 +4,7 @@ name: songsservlet clean, build, test, package & run scripts
 on:
   pull_request:
     branches:
-      - songsservlet
+      - master
 
 jobs:
   build:
