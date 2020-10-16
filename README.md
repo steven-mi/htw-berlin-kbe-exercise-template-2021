@@ -27,7 +27,7 @@ git init
 git add -A
 git commit -m "init"
 git remote add origin <YOUR GIT CLONE LINK>
-git push -u origin master
+git push -u origin main
 ```
 
 ## runmerunner clean, bauen, testen & verpacken
