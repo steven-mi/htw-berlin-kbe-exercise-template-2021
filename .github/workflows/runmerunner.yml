@@ -28,7 +28,7 @@ jobs:
     - name: copy runmerunner test classes
       run: ./runmerunner/TestClasses/htwb/*.java ./runmerunner/src/main/java/htwb
     - name: Run tests
-      run |
+      run: |
         jarpath=$(ls ./runmerunner/target/runmerunner-*.jar)
         jarname=$(basename $jarpath)
         echo $jarname
