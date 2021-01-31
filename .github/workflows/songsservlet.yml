@@ -1,9 +1,9 @@
 name: songsservlet clean, build, test, package & run scripts
 
 on:
-  pull_request:
+  push:
     branches:
-      - main
+      - songsservlet
 
 jobs:
   build:

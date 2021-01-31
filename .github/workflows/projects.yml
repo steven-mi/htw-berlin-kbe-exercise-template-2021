@@ -2,7 +2,7 @@ name: clean, build, test & package all projects
 
 # Action will run on each push
 on:
-  [push, pull_request]
+  [push]
 
 jobs:
   build:

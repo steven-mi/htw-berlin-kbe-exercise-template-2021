@@ -18,7 +18,6 @@ Für jede **implementierte Anfrage** soll folgendes Template angewendet werden:
 
 
 #### Template Für GET, DELETE Methoden
-
 ```
 curl -X GET \
      -H "Accept: application/json" \
@@ -28,11 +27,9 @@ curl -X GET \
 
 
 #### Template für POST, PUT Methoden
-
 ```
 curl -X POST \
      -H "Content-Type: application/json" \
      -v "http://localhost:8080/hallo" \
      -d '{"title":"Wrecking Ball"}'
 ```
-
