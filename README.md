@@ -1,10 +1,10 @@
 # KBE Projekt Template
 
-## TODO
+## TODOS
 1. Ersetzen Sie die Überschrift mit `TEAMNAME`
 2. Geben Sie Ihre Teammitglieder in die Tabelle ein
-3. Folge den Anweisungen in der pom.xml
 4. Folge **KBE Repository einrichten**
+4. Folge den Anweisungen in der pom.xml
 5. Erstelle die Branches (Groß- und Kleinschreibung beachten):
    - `runmerunner`
    - `songsservlet`
@@ -20,17 +20,20 @@
 
 ## KBE Repository einrichten
 
-Erstellen Sie ein leeres GitHub-Repository (kein `.gitignore`, `README.md` und `LICSENSE`) mit `TEAMNAME` als Repository-Name. Übertragen Sie dann den Inhalt des Template-Repository in Ihr erstelltes Repository.
+**Einen Fork vom Repository erstellen:**
+
+![](.github/images/fork.png)
+
+**Repository klonen:**
 
 ```bash
-git init
-git add -A
-git commit -m "init"
-git remote add origin <YOUR GIT CLONE LINK>
-git push -u origin main
+git clone LINK_ZUM_REPOSITORY
 ```
 
-## runmerunner clean, bauen, testen & verpacken
+## Erste Schritte
+
+### runmerunner clean, bauen, testen & verpacken
+
 ```
 mvn -pl runmerunner clean package 
 ```
@@ -44,7 +47,7 @@ mvn clean package
 
 
 
-## songsservlet clean, bauen, testen & verpacken
+### songsservlet clean, bauen, testen & verpacken
 
 ```
 mvn -pl songsservlet clean package 
@@ -59,7 +62,7 @@ mvn clean package
 
 
 
-## songsWS clean, bauen, testen & verpacken
+###  songsWS clean, bauen, testen & verpacken
 ```
 mvn -pl songsWS clean package 
 ```
@@ -73,7 +76,7 @@ mvn clean package
 
 
 
-## Alle Projekte clean, bauen, testen & verpacken: > mvn clean package
+### Alle Projekte clean, bauen, testen & verpacken: > mvn clean package
 
 ```
 mvn clean package
