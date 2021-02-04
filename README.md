@@ -36,7 +36,7 @@ git clone LINK_ZUM_REPOSITORY
 # zum Repository gehen
 cd PFAD_ZUM_REPOSITORY
 
-# den kbe Remote setzen
+# den kbe Remote setzen (muss man nur einmal machen)
 git remote add kbe https://github.com/htwb-kbe/htwb-kbe-repo-template.git
 
 # Updates holen
