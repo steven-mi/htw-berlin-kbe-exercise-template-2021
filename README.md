@@ -30,6 +30,24 @@
 git clone LINK_ZUM_REPOSITORY
 ```
 
+## KBE Repository Updates erhalten
+
+```
+# zum Repository gehen
+cd PFAD_ZUM_REPOSITORY
+
+# den kbe Remote setzen
+git remote add kbe https://github.com/htwb-kbe/htwb-kbe-repo-template.git
+
+# Updates holen
+git fetch kbe
+git pull kbe master
+
+# Updates in das eigene Repository hinzufügen
+git push
+```
+
+
 ## Erste Schritte
 
 ### runmerunner clean, bauen, testen & verpacken
