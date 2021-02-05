@@ -1,7 +1,7 @@
 name: songsWSa clean, build, test, package & run scripts
 
 on:
-  push:
+  pull_request_target:
     branches:
       - songsWSa
 
