@@ -1,3 +1,7 @@
+## Checklist
+- [ ] Ist **htwb-steven** als Reviewer eingetragen?
+- [ ] Ist der Workflow `projects.yml` erfolgreich?
+
 ## Für Beleg 2, 3, 4
 
 ### Datenbank
