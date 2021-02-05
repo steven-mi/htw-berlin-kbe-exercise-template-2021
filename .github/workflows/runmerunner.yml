@@ -1,9 +1,10 @@
 name: runmerunner clean, build, test & package 
 
 on:
-  push:
-    branches:
+  pull_request_target:
+    branches: 
       - runmerunner
+
 
 jobs:
   build:
