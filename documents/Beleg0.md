@@ -37,5 +37,4 @@ Person suchen, mit der Sie in diesem Semester in KBE zusammenarbeiten werden
   2. Falls Einträge schon da sind, dann suchen Sie sich bitte aus der Liste der suchenden Teammitglieder ein Teammitglied aus und tragen Ihren Namen, Matrikelnummer, ZugNr in die Spalte „Teammitglied 2“ ein. 
 
 ##  Repository einrichten
-
-**htwb-kbe-repo-template** aus Moodle herunterladen und README folgen
+Anweisungen auf GitHub folgen. Link ist in Moodle.
