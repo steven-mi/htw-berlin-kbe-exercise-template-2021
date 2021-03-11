@@ -80,23 +80,3 @@ HTTP/1.1 200 OK
    ```
    
 5. Ihr Webservice **muss** alle inkorrekten Client-Requests entsprechend RFC 2616, Section 10.04: https://tools.ietf.org/html/rfc2616#section-10.4 handhaben. HTTP-Methoden, die Ihr Service nicht anbietet (wie HTTP-PUT und HTTP-DELETE) **müssen** mit dem Statuscode 405 beantwortet werden.
-
-
-**Bonus:** 
-
-- Deployment auf einen öffentlichen Cloud Anbieter (Heroku, AWS, GCS, Azure, ....)
-- Nutzung von einer CI/CD Plattform zum automatischen Deployment (wenn Sie GitHub Action benutzen, dann bitte eine neue .yml Datei erstellen und nicht die bestehenden verändern)
-
-**Anmerkung:**
-
-- Der Workflow `songsservlet.yml` soll beim Pull Request ausgeführt werden. Überprüfen sie in der YAML Datei ob im Codeabschnitt:
-
-  ```
-  on:
-    pull_request:
-      branches:
-  ```
-  
-  der richtige Branch steht. Haben sie einen **master** branch muss dort **master** stehen. Wenn sie einen **main** Branch haben dann **main**
-
-- Halten sie sich an den Kritieren in den Einführungsfolien. Fragen sie ggf. bei Unstimmigkeiten nach. 
