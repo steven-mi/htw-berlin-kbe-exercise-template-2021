@@ -1,11 +1,9 @@
-name: runmerunner clean, build, test & package 
+name: runmerunner clean, build, test & package
 
 on:
   pull_request:
-    branches: 
-      - runmerunner
-      - master
-
+    branches:
+      - main
 
 jobs:
   build:
@@ -18,24 +16,54 @@ jobs:
     runs-on: ${{ matrix.os }}
     # all build steps
     steps:
-    - uses: actions/checkout@v2
-    - name: Set up Java 11
-      uses: actions/setup-java@v1
-      with:
-        java-version: ${{ matrix.java }}
-        java-package: jdk 
-        architecture: x64 
-    - name: runmerunner clean, build, test & package
-      run: mvn -pl runmerunner clean package
-    - name: copy runmerunner test classes
-      run: ./runmerunner/TestClasses/htwb/*.java ./runmerunner/src/main/java/htwb
-    - name: Run tests
-      run: |
-        jarpath=$(ls ./runmerunner/target/runmerunner-*.jar)
-        jarname=$(basename $jarpath)
-        echo $jarname
-        java -jar target/$jarname
-        java -jar target/$jarname dieseklassegibtesnicht
-        java -jar target/$jarname java.io.Closeable
-        java -jar target/$jarname htwb.ClassNoDefConstr
-        java -jar target/$jarname htwb.ClassWithRunMes
+      - uses: actions/checkout@v2
+      - name: Set up Java 11
+        uses: actions/setup-java@v1
+        with:
+          java-version: ${{ matrix.java }}
+          java-package: jdk
+          architecture: x64
+      - name: copy runmerunner test classes
+        run: cp ./runmerunner/TestClasses/htwb/*.java ./runmerunner/src/main/java/htwb
+      - name: runmerunner clean, build, test & package
+        run: mvn -pl runmerunner clean package
+      - name: Run tests 1
+        run: |
+          jarpath=$(ls ./runmerunner/target/runmerunner-*.jar)
+          jarname=$(basename $jarpath)
+          echo $jarname
+          cd runmerunner
+          java -jar target/$jarname
+        if: always()
+      - name: Run tests 2
+        run: |
+          jarpath=$(ls ./runmerunner/target/runmerunner-*.jar)
+          jarname=$(basename $jarpath)
+          echo $jarname
+          cd runmerunner
+          java -jar target/$jarname dieseklassegibtesnicht
+        if: always()
+      - name: Run tests 3
+        run: |
+          jarpath=$(ls ./runmerunner/target/runmerunner-*.jar)
+          jarname=$(basename $jarpath)
+          echo $jarname
+          cd runmerunner
+          java -jar target/$jarname java.io.Closeable
+        if: always()
+      - name: Run tests 4
+        run: |
+          jarpath=$(ls ./runmerunner/target/runmerunner-*.jar)
+          jarname=$(basename $jarpath)
+          echo $jarname
+          cd runmerunner
+          java -jar target/$jarname htwb.ClassNoDefConstr
+        if: always()
+      - name: Run tests 5
+        run: |
+          jarpath=$(ls ./runmerunner/target/runmerunner-*.jar)
+          jarname=$(basename $jarpath)
+          echo $jarname
+          cd runmerunner
+          java -jar target/$jarname htwb.ClassWithRunMes
+        if: always()
