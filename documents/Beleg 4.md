@@ -64,5 +64,3 @@ Zum Verständnis der Anforderungen nehmen wir an, dass
 7. Bei den **Unit/Integration-Tests** muss als Test-Datenbanksystem HSQLDB **(**[**http://hsqldb.org/**](http://hsqldb.org/)**)** genutzt werden.
 8. Der **GitVersionController muss funktionieren**. Code dafür wird in Moodle hochgeladen. Der Controller ist über `songsWS-TEAMNAME/rest/version` erreichbar.
 9. Sie müssen ihren Service auf einen Cloud-Anbieter bereitstellen. 
-10. **Bonuspunkte:** Erstellen sie eine Continous Deployment Pipeline für ihren Service.
-
