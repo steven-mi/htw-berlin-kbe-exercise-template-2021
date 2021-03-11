@@ -3,8 +3,10 @@ name: songsWSa clean, build, test, package & run scripts
 on:
   pull_request:
     branches:
-      - songsWSa
-
+      - main
+      - master
+      
+    
 jobs:
   build:
     # define os, versions, ...
