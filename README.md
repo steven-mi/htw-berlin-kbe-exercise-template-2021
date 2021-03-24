@@ -21,6 +21,9 @@ git clone LINK_ZUM_REPOSITORY
 3. Ersetzen Sie die Überschrift in `README.md `mit `TEAMNAME`
 4. Geben Sie Ihre Teammitglieder in die Tabelle der `README.md` ein
 6. Folge den Anweisungen in der `pom.xml`
+7. Führe die Befehle in [Befehle die immer funktionieren müssen](#befehle-die-immer-funktionieren-müssen) aus.
+8. Ihre Änderungen in das Repository hinzufügen.
+9. Lesen sie sich die README.md durch.
 
 ## KBE Repository Updates erhalten
 
