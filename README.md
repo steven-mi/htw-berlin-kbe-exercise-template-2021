@@ -50,7 +50,7 @@ Für die Belege gilt folgender Branch Namen:
 
 ### Belegpräsentation und Github Actions
 
-Die Befehle im Abschnitt [Befehle die immer funktionieren müssen](#-befehle-die-immer-funktionieren-müssen) sollten immer lokal funktionieren. Sie können eine IDE Ihrer Wahl zum Entwickeln verwenden. Allerdings müssen sie bei der Belegpräsentation unbedingt das Terminal verwenden. Andernfalls wird der Beleg nicht ausgewertet. Zusätzlich muss die auszuwertende Übergabe mit einem grünen Häkchen versehen sein siehe:
+Die Befehle im Abschnitt [Befehle die immer funktionieren müssen](#befehle-die-immer-funktionieren-müssen) sollten immer lokal funktionieren. Sie können eine IDE Ihrer Wahl zum Entwickeln verwenden. Allerdings müssen sie bei der Belegpräsentation unbedingt das Terminal verwenden und die Befehle nutzen. Andernfalls wird der Beleg nicht ausgewertet. Zusätzlich muss die auszuwertende Übergabe mit einem grünen Häkchen versehen sein siehe:
 
 ![image](.github/images/commit.PNG)
 
