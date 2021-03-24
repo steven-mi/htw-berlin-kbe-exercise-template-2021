@@ -50,7 +50,8 @@ Für die Belege gilt folgender Branch Namen:
 
 ### Befehle die immer funktionieren müssen
 Die folgenden Befehle sollten immer lokal funktionieren. Sie können eine IDE Ihrer Wahl zum Entwickeln verwenden. Allerdings müssen sie bei der Belegpräsentation unbedingt das Terminal verwenden. Andernfalls wird der Beleg nicht ausgewertet. Zusätzlich muss die auszuwertende Übergabe mit einem grünen Häkchen versehen sein siehe:
-![image](.github/images/commit.png)
+
+![image](.github/images/commit.PNG)
 
 
 
