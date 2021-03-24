@@ -35,7 +35,7 @@ cd PFAD_ZUM_REPOSITORY
 git remote add kbe https://github.com/htwb-kbe/htwb-kbe-repo-template.git
 
 # Updates holen
-git pull kbe master
+git pull kbe main
 
 # Updates in das eigene Repository hinzufügen
 git push
