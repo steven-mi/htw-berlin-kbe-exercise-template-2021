@@ -53,6 +53,9 @@ Die folgenden Befehle sollten immer lokal funktionieren. Sie können eine IDE Ih
 
 ![image](.github/images/commit.PNG)
 
+Bei einem Pull Request muss nur der Workflow **clean, build, test & package all projects** funktionieren. Es ist normal, dass die anderen Workflows fehlschlagen siehe:
+
+![image](.github/images/pull-request.PNG)
 
 
 #### runmerunner clean, bauen, testen & verpacken
