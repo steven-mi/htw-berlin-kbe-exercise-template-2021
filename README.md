@@ -106,8 +106,7 @@ mvn clean package
 
 
 
-#### Alle Projekte clean, bauen, testen & verpacken: > mvn clean package
-
+#### Alle Projekte clean, bauen, testen & verpacken
 ```
 mvn clean package
 ```
