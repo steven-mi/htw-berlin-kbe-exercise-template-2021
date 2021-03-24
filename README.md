@@ -48,8 +48,9 @@ Für die Belege gilt folgender Branch Namen:
 - songsWSa: `songsWSa`
 - songsWSb: `songsWSb`
 
-### Befehle die immer funktionieren müssen
-Die folgenden Befehle sollten immer lokal funktionieren. Sie können eine IDE Ihrer Wahl zum Entwickeln verwenden. Allerdings müssen sie bei der Belegpräsentation unbedingt das Terminal verwenden. Andernfalls wird der Beleg nicht ausgewertet. Zusätzlich muss die auszuwertende Übergabe mit einem grünen Häkchen versehen sein siehe:
+### Belegpräsentation und Github Actions
+
+Die Befehle im Abschnitt [Befehle die immer funktionieren müssen](#-befehle-die-immer-funktionieren-müssen) sollten immer lokal funktionieren. Sie können eine IDE Ihrer Wahl zum Entwickeln verwenden. Allerdings müssen sie bei der Belegpräsentation unbedingt das Terminal verwenden. Andernfalls wird der Beleg nicht ausgewertet. Zusätzlich muss die auszuwertende Übergabe mit einem grünen Häkchen versehen sein siehe:
 
 ![image](.github/images/commit.PNG)
 
@@ -57,6 +58,7 @@ Bei einem Pull Request muss nur der Workflow **clean, build, test & package all 
 
 ![image](.github/images/pull-request.PNG)
 
+### Befehle die immer funktionieren müssen
 
 #### runmerunner clean, bauen, testen & verpacken
 
