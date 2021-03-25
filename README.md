@@ -34,11 +34,14 @@ cd PFAD_ZUM_REPOSITORY
 # den kbe Remote setzen (muss man nur einmal machen)
 git remote add kbe https://github.com/htwb-kbe/htwb-kbe-repo-template.git
 
+# In den Main Branch wechseln und updates erhalten
+git checkout main
+
 # Updates holen
 git pull kbe main
 
 # Updates in das eigene Repository hinzufügen
-git push
+git push origin main
 ```
 
 
