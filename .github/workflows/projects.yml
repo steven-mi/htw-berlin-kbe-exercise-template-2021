@@ -28,3 +28,9 @@ jobs:
       run: mvn -pl songsservlet clean package 
     - name: songsWS clean, build, test & package
       run: mvn -pl songsWS clean package 
+    - name: create timestamp file
+      run: date >> timestamp.log
+    - uses: actions/upload-artifact@v2
+      with:
+        name: timestamp
+        path: timestamp.log
