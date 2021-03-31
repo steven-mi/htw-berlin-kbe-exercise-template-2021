@@ -8,7 +8,7 @@ Die „Chief“-Softwarearchitektin und der Product Owner von SONGSANDO, GmbH m�
 
 1. Der Webservice **muss** die Servlet API 4.0 nutzen und in einem lokal laufendend Servlet-Container, Tomcat 9.x, deployed werden.
 
-2. Der Webservice **muss** auf einen externen (nicht-lokalen) relationale Datenbankserver zugreifen können. Diese relationale Datenbank **muss** eine Tabelle für Songs enthalten. Diese Tabelle **muss** aus genau diesen 5 Spalten bestehen und **muss** von außerhalb erreichbar sein:
+2. Der Webservice **muss** auf einen externen (nicht-lokalen) öffentlich zugänglichen relationale Datenbankserver zugreifen und nutzen. Die relationale Datenbank **muss** eine Tabelle für Songs enthalten. Die Tabelle **muss** aus genau diesen 5 Spalten bestehen:
 
    ```sql
    “id” (INT, NOT NULL, PRIMARY KEY), 
