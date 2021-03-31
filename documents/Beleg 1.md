@@ -6,7 +6,7 @@ Als Entwickler/in möchte ich ein Mini-Framework namens “runMeRunner” schrei
 
 ##  Aufgabe
 
-1. Sie müssen eine Annotation namens „RunMe“ in der Datei **RunMe.java** im Package **htwb.ai** erstellen. Die Annotation soll zur Laufzeit ausgewertet werden und soll nur für Methoden verwendet werden.
+1. Sie **müssen** eine Annotation namens „RunMe“ in der Datei **RunMe.java** im Package **htwb.ai** erstellen. Die Annotation **soll** zur Laufzeit ausgewertet werden und **soll** nur für Methoden verwendet werden.
 
 2. Ihr Programm muss so aufgerufen werden: `java -jar runmerunner-TEAMNAME.jar className` wobei `className` der vollständige Name einer Klasse ist.
 
@@ -20,7 +20,7 @@ Als Entwickler/in möchte ich ein Mini-Framework namens “runMeRunner” schrei
    $> java -jar runmerunner-TEAMNAME.jar java.io.Closable
    ```
 
-3. Die zu ladene Klasse kann Methoden deklarieren, die mit der Annotation `@RunMe`versehen sind. Methoden, die mit `@RunMe` annotiert sind, sollen von Ihrem Programm ausgeführt werden. Die Ausgabe Ihres Programms in der Kommandozeile muss eine Auflistung über alle deklarierten Methoden der Klasse sein:
+3. Die zu ladene Klasse kann Methoden deklarieren, die mit der Annotation `@RunMe`versehen sind. Methoden, die mit `@RunMe` annotiert sind, sollen von Ihrem Programm ausgeführt werden. Die Ausgabe Ihres Programms in der Kommandozeile **muss** eine Auflistung über alle deklarierten Methoden der Klasse sein:
 
    - alle Methodennamen ohne `@RunMe`, alle Methodennamen mit `@RunMe`, Auflistung der `@RunMe`-Methoden, die von Ihrem Programm nicht ausgeführt werden konnten mit Grund
 
@@ -43,7 +43,7 @@ Als Entwickler/in möchte ich ein Mini-Framework namens “runMeRunner” schrei
      findMe3: IllegalAccessException
      ```
 
-   4. Die Users Ihres Programms können bei der Befehleingabe Fehler machen. Diese Fehler muss Ihr Programm erfassen, angeben und eine Usage-Message ausgeben. Beispiele (das ist keine vollständige Liste):
+   4. Die Users Ihres Programms können bei der Befehleingabe Fehler machen. Diese Fehler **muss** Ihr Programm erfassen, angeben und eine Usage-Message ausgeben. Beispiele (das ist keine vollständige Liste):
 
       ```bash
       $> java -jar runmerunner-TEAMNAME.jar blub
@@ -55,5 +55,5 @@ Als Entwickler/in möchte ich ein Mini-Framework namens “runMeRunner” schrei
       Usage: java -jar runmerunner-TEAMNAME.jar className
       ```
 
-   5. **Alle TestCases müssen mit UnitTests abgedeckt sein. UnitTests werden bewertet.**
+   5. Alle TestCases **müssen** mit UnitTests abgedeckt sein. UnitTests werden bewertet.
 
