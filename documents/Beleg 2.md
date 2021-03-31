@@ -62,15 +62,15 @@ Die „Chief“-Softwarearchitektin und der Product Owner von SONGSANDO, GmbH m�
    ```
 
    **GET ALL SONGS**
-
    ```http
-GET http://localhost:8080/songsservlet-TEAMNAME/songs?all
+   GET http://localhost:8080/songsservlet-TEAMNAME/songs?all
    Accept: application/json
    ```
+   
    Falls die HTTP-Anfrage vom Client korrekt gestellt wurde und erfolgreich von Ihrem Service bearbeitet wurde, liefert Ihr Service eine Liste aller Songs aus Ihrer DB-Tabelle in JSON-Format zurück. Beispiel für die entsprechende HTTP-Response:
    
    ```http
-HTTP/1.1 200 OK
+   HTTP/1.1 200 OK
    Content-Type: application/json
    …
    Payload:
