@@ -8,8 +8,7 @@ Die „Chief“-Softwarearchitektin und der Product Owner von SONGSANDO, GmbH m�
 
 1. Der Webservice **muss** die Servlet API 4.0 nutzen und in einem lokal laufendend Servlet-Container, Tomcat 9.x, deployed werden.
 
-2. Der Webservice **muss** eine Datenbank nutzen. Die relationale Datenbank **muss** eine Tabelle für Songs enthalten. Die Datenbank **muss** lokal ohne die Verwendung von VPNs erreichbar sein. Die Tabelle **muss** aus genau diesen 5 Spalten bestehen:
-
+2. Der Webservice **soll** eine In-Memory Datenbank nutzen. Die Datenbank **soll** mit den 10 Songs in der Datei `songsservlet/src/main/resources/songs.json` initialisiert werden. Sie **können** entweder die Datenbank selbst implementieren oder fertige Datenbanksysteme nutzen. Ihre Song-Entität **soll** folgendem entsprechen:
    ```sql
    “id” (INT, NOT NULL, PRIMARY KEY), 
    “title” (VARCHAR(100), NOT NULL), 
@@ -78,5 +77,5 @@ Die „Chief“-Softwarearchitektin und der Product Owner von SONGSANDO, GmbH m�
    {"id":2,"title":"Breaking Hell","artist":"Smiley C.","label":"RCA","released":2019}
    {"id":3,"title":"Wrecking Ball","artist":"MILEY CYRUS","label":"RCA","released":2013}]
    ```
-   
+      
 5. Ihr Webservice **muss** alle inkorrekten Client-Requests entsprechend RFC 2616, Section 10.04: https://tools.ietf.org/html/rfc2616#section-10.4 handhaben. HTTP-Methoden, die Ihr Service nicht anbietet (wie HTTP-PUT und HTTP-DELETE) **müssen** mit dem Statuscode 405 beantwortet werden.
