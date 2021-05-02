@@ -53,19 +53,17 @@ Der Prototyp für einen Songs-Webservice ist vom Management der SONGSANDO GmbH g
 
    Sie können sich auch noch andere Users anlegen, aber die beiden obigen müssen genau so in Ihrer Datenbank vorhanden sein. 
 
-3.  In 4. muss Ihr Tomcat **https**-Anfragen handhaben können. Für die SSL/TLS-Konfiguration von Tomcat siehe: `https://tomcat.apache.org/tomcat-9.0-doc/ssl-howto.html`. Self-signed Zertifikate reichen für unsere Zwecke natürlich aus. Damit auch cURL mit diesen self-signed Zertifikaten klarkommt, siehe: `https://stackoverflow.com/questions/27611193/use-self-signed-certificate-with-curl`
-
-4. Mit den HTTPS-Anfragen:
+3. Mit den HTTPS-Anfragen:
 
    ```bash
    curl -X POST \
         -H "Content-Type: application/json" \
-        -v "https://localhost:8443/songsWS-TEAMNAME/rest/auth" \
+        -v "https://localhost:8080/songsWS-TEAMNAME/rest/auth" \
         -d '{"userId":"mmuster","password":"pass1234"}'
    
    curl -X POST \
         -H "Content-Type: application/json" \
-        -v "https://localhost:8443/songsWS-TEAMNAME/rest/auth" \
+        -v "https://localhost:8080/songsWS-TEAMNAME/rest/auth" \
         -d '{"userId":"eschuler","password":"pass1234"}'
    ```
 
