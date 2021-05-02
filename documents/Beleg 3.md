@@ -53,7 +53,7 @@ Der Prototyp für einen Songs-Webservice ist vom Management der SONGSANDO GmbH g
 
    Sie können sich auch noch andere Users anlegen, aber die beiden obigen müssen genau so in Ihrer Datenbank vorhanden sein. 
 
-3. Mit den HTTPS-Anfragen:
+3. Mit den HTTP-Anfragen:
 
    ```bash
    curl -X POST \
@@ -92,4 +92,3 @@ Der Prototyp für einen Songs-Webservice ist vom Management der SONGSANDO GmbH g
 - DI nutzen und die DAOs in die entsprechenden Controller injizieren
 - Unit-Tests für alle public-Methoden der Controller-Klassen
 - Ihr Code nutzt eine logische/praktische Package-Strukturs
--  Anforderungen von Beleg 2 gelten auch für den Beleg 3
