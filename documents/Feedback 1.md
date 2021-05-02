@@ -24,5 +24,5 @@
 | posting empty file: 400                             | 1         |   1         |            |            |
 | **init/destroy/thread safety** (1)**:**             |           |             |            |            |
 | Wie kreiieren Sie die EMF? Wo wird sie geschlossen? | 1         |    1        |            |            |
-| **Points:**                                         | 16        |             |            |            |
+| **Points:**                                         | 16        |             |     6       |            |
 | **Total:**                                          |           |             |            |            |
