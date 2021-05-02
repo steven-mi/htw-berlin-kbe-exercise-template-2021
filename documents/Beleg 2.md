@@ -8,13 +8,13 @@ Die „Chief“-Softwarearchitektin und der Product Owner von SONGSANDO, GmbH m�
 
 1. Der Webservice **muss** die Servlet API 4.0 nutzen und in einem lokal laufendend Servlet-Container, Tomcat 9.x, deployed werden.
 
-2. Der Webservice **soll** eine In-Memory Datenbank nutzen. Die Datenbank **soll** mit den 10 Songs in der Datei `songsservlet/src/main/resources/songs.json` initialisiert werden. Sie **können** entweder die Datenbank selbst implementieren oder fertige Datenbanksysteme nutzen. Ihre Song-Entität **soll** folgendem entsprechen:
+2. Der Webservice **soll** eine In-Memory Datenbank nutzen. Die Datenbank **soll** mit den 10 Songs in der Datei `songsservlet/src/main/resources/songs.json` initialisiert werden. Die relationale Datenbank **muss** eine Tabelle für Songs enthalten. Die Tabelle **muss** aus genau diesen 5 Spalten bestehen:
    ```sql
    “id” (INT, NOT NULL, PRIMARY KEY), 
    “title” (VARCHAR(100), NOT NULL), 
    “artist” (VARCHAR(100)), 
-   label (VARCHAR(100)), 
-   released (INT)
+   ”label” (VARCHAR(100)), 
+   ”released” (INT)
    ```
    
 3. Der Webservice **muss** folgenden **HTTP-POST-Request** handhaben können:
