@@ -5,15 +5,16 @@
 |                                                     | **Funkt** | **Punkte** |   **Test**  | **Punkte** |
 | **Put** (1): returns 405                            | 1         |   1         |            |           |
 | **Delete**(1): returns 405                          | 1         |   1         |            |           |
-| **Get** (9):                                        |           |            |            |           |
+| **Get song** (6):                                        |           |        |            |           |
 | \- songId=existingID: the song in JSON              | 1         |   1         |            |           |
-| \- all: all songs in JSON                           | 1         |   1         |            |           |
 | \- id=non-existingID: returns 404                   | 1         |   1         |            |           |
 | \- id="someString": returns 400, not 500s           | 1         |   1         |            |           |
 | \- bad/no params: returns 400                       | 1         |   1         |            |           |
 | \- no Accept-Header: returns JSON                   | 1         |   1         |            |           |
 | \- Accept-Header not JSON: returns 406 or JSON      | 1         |   1         |            |           |
-| **Post** (8):                                       |           |            |            |           |
+| **Get ALL** (1):                                        |           |         |            |           |
+| \- all: all songs in JSON                           | 1         |   1         |            |           |
+| **Post** (8):                                       |           |             |            |           |
 | posting a JSON song correctly:                      | 1         |    1        |            |           |
 | \- returns 201                                      | 1         |   1         |            |           |
 | \- and new Id in location header                    | 1         |   1         |            |            |
