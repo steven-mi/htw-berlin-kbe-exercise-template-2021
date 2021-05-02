@@ -79,3 +79,6 @@ Die „Chief“-Softwarearchitektin und der Product Owner von SONGSANDO, GmbH m�
    ```
       
 5. Ihr Webservice **muss** alle inkorrekten Client-Requests entsprechend RFC 2616, Section 10.04: https://tools.ietf.org/html/rfc2616#section-10.4 handhaben. HTTP-Methoden, die Ihr Service nicht anbietet (wie HTTP-PUT und HTTP-DELETE) **müssen** mit dem Statuscode 405 beantwortet werden.
+
+6. Testen sie nur den **GET SONG** Endpoint
+
