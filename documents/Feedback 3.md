@@ -4,7 +4,7 @@
 | Name                                                         |           |            |
 | Name                                                         |           |            |
 |                                                              | **Funkt** | **Punkte** |
-| Requests to all endpoints must contain „Authorization“:      | 1         | 1          |
+| Requests to all endpoints must contain „Authorization“:      | 2         | 2          |
 | Service is publicly available                                | 1         | 1          |
 | \- No/BadToken: 401                                          | 1         | 1          |
 | DB has two users with two songlists each                     | 2         | 2          |
@@ -28,7 +28,7 @@
 | \- HSQLDB **OR** a test schema in mysql/postgresql is used, i.e., another dbConfig file in "test/resources“ exists | 2         | 2          |
 | \- tests for getAllSongList(userid)                          | 2         | 2          |
 | \- tests for getSongList(iD)                                 | 2         | 2          |
-| \- tests for saveSongList (newSongList)                      | 1         | 1          |
-| \- tests for deleteSongList(songListid)                      | 1         | 1          |
-| TOTAL                                                        | 27        | 27         |
+| \- tests for saveSongList (newSongList)                      | 2         | 2          |
+| \- tests for deleteSongList(songListid)                      | 2         | 2          |
+| TOTAL                                                        | 30        | 30         |
 
